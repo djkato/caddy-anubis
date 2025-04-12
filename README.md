@@ -33,4 +33,4 @@ Example (also check the caddyfile in this repo, it is used for testing):
 
 ## Credits
 
-- [anubis](github.com/TecharoHQ/anubis) - the project that started all of this.
+- [anubis](https://github.com/TecharoHQ/anubis) - the project that started all of this.
