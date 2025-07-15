@@ -42,7 +42,7 @@ func (m *AnubisMiddleware) Provision(ctx caddy.Context) error {
 	m.logger = ctx.Logger().Named("anubis")
 	m.logger.Info("Anubis middleware provisioning")
 
-	policy, err := libanubis.LoadPoliciesOrDefault("", anubis.DefaultDifficulty)
+	policy, err := libanubis.LoadPoliciesOrDefault(ctx, "", anubis.DefaultDifficulty)
 	if err != nil {
 		return err
 	}
